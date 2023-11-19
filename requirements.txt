@@ -1,0 +1,6 @@
+pytest==7.4.2
+
+# databricks-connect must be installed in your local env with the version matching your cluster's runtime
+# It is not compatible with pyspark, so you should manually set up your local environment.
+# https://docs.databricks.com/dev-tools/databricks-connect.html#step-2-install-databricks-connect-on-your-local-computer
+# https://docs.databricks.com/en/dev-tools/index-ide.html#set-up-databricks-connect
