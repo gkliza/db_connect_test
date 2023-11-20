@@ -2,7 +2,6 @@
 import pytest
 import os
 import sys
-import dbutils
 
 # Get the path to this notebook, for example "/Workspace/Repos/{username}/{repo-name}".
 notebook_path = dbutils.notebook.entry_point.getDbutils().notebook().getContext().notebookPath().get()
