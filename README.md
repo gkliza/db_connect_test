@@ -24,4 +24,14 @@ You will need to set up the following environment variables:
 ### Environment Variables in PyCharm / IntelliJ
 Environment Variables are cumbersome in PyCharm. Variables can be set for the Python Console, the Terminal, or for each run configuration triggere through the code view.
 
-When executing tests from the code view, a new configuration is created for each test. Before running any tests, you should edit the default configuration for Run -> Edit Configurations -> Edit Configuration Templates -> Python tests -> Autodetect.
+When executing tests from the code view, a new configuration is created for each test. Before running any tests, you should edit the default configuration for Run -> Edit Configurations -> Edit Configuration Templates -> Python tests -> [Autodetect, pytest].
+
+## Other Notes
+databricks-connect 13.* and up implement a SparkConnect that no longer supports .rdd functions.
+
+## Running Tests
+### From PyCharm / IntelliJ
+Tests can be run from the code view by right clicking on the test file or test function and selecting "Run 'pytest in test_file.py'". This will create a new run configuration for the test. You can edit the run configuration to add environment variables.
+
+### From Databricks Notebook
+Add this repository as a repo to your databricks repos. You can then run the `run_test_notebook.py`.
